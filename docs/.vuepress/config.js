@@ -7,5 +7,7 @@ export default defineUserConfig({
     lang: 'ja',
     base: '/vuepress-sample/',
     bundler: viteBundler(),
-    theme: defaultTheme()
+    theme: defaultTheme(),
+
+    port: 9000
 })
