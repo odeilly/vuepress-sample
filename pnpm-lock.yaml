@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      vuepress-sample:
+        specifier: 'file:'
+        version: 'file:'
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.18
@@ -1353,6 +1357,9 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  'vuepress-sample@file:':
+    resolution: {directory: '', type: directory}
 
   vuepress@2.0.0-rc.18:
     resolution: {integrity: sha512-TFpePHTIMiUbiJcHTgD4Wc5eBlsxBnhv36F/eM2vbDoeutcS1dGrNtZoKUxrZDXTeZH+q8vrZ3CiBCsHw3K7eA==}
@@ -2756,6 +2763,8 @@ snapshots:
       '@vue/runtime-dom': 3.5.12
       '@vue/server-renderer': 3.5.12(vue@3.5.12)
       '@vue/shared': 3.5.12
+
+  'vuepress-sample@file:': {}
 
   vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12):
     dependencies:
