@@ -2,6 +2,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
+import { copyCodePlugin } from "@vuepress/plugin-copy-code";
 
 export default defineUserConfig({
   title: "VuePress サンプル",
@@ -35,6 +36,14 @@ export default defineUserConfig({
         }
       },
       maxSuggestions: 10,
+    }),
+    copyCodePlugin({
+      locales:{
+        '/': {
+          copied: "copied",
+          copy: "copy",
+        }
+      }
     })
   ],
 
