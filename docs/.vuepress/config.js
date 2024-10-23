@@ -29,6 +29,7 @@ export default defineUserConfig({
   }),
 
   plugins: [
+
     searchPlugin({
       locales: {
         '/': {
@@ -37,6 +38,7 @@ export default defineUserConfig({
       },
       maxSuggestions: 10,
     }),
+
     copyCodePlugin({
       locales:{
         '/': {
