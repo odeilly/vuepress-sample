@@ -15,6 +15,9 @@ importers:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.18
         version: 2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3)
+      '@vuepress/plugin-search':
+        specifier: 2.0.0-rc.55
+        version: 2.0.0-rc.55(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
       '@vuepress/theme-default':
         specifier: 2.0.0-rc.56
         version: 2.0.0-rc.56(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
@@ -518,6 +521,11 @@ packages:
 
   '@vuepress/plugin-prismjs@2.0.0-rc.56':
     resolution: {integrity: sha512-ySLb9mQiEO1veNoy8CVBs9aVEc/vVo0YKlFHKFr7xxHpnBurVHnqcnlV5M2MUr3/05oSRK+xpmq7Y/Hg/+TD2g==}
+    peerDependencies:
+      vuepress: 2.0.0-rc.18
+
+  '@vuepress/plugin-search@2.0.0-rc.55':
+    resolution: {integrity: sha512-K+5sw6o0Ftgo3qaHNd4djnDUDOe4sTrmbmnFcTItOG29V3sT+U5h59V5BqukRFyurZdPvTPCw967niWGEGyZAw==}
     peerDependencies:
       vuepress: 2.0.0-rc.18
 
@@ -1957,6 +1965,14 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - '@vueuse/core'
+      - typescript
+
+  '@vuepress/plugin-search@2.0.0-rc.55(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))':
+    dependencies:
+      chokidar: 3.6.0
+      vue: 3.5.12
+      vuepress: 2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)
+    transitivePeerDependencies:
       - typescript
 
   '@vuepress/plugin-seo@2.0.0-rc.56(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))':

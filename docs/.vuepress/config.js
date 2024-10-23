@@ -1,4 +1,5 @@
 import { viteBundler } from "@vuepress/bundler-vite";
+import { searchPlugin } from "@vuepress/plugin-search";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 
@@ -25,6 +26,17 @@ export default defineUserConfig({
       },
     ],
   }),
+
+  plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Search',
+        }
+      },
+      maxSuggestions: 10,
+    })
+  ],
 
   port: 9000,
 });
