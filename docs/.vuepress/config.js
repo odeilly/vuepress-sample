@@ -40,6 +40,7 @@ export default defineUserConfig({
     }),
 
     copyCodePlugin({
+      duration: 1000,
       locales:{
         '/': {
           copied: "copied",
