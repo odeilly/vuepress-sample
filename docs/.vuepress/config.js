@@ -4,6 +4,7 @@ import { defineUserConfig } from "vuepress";
 
 export default defineUserConfig({
   title: "VuePress サンプル",
+  description: "サンプルです。",
   lang: "ja",
   base: "/vuepress-sample/",
   bundler: viteBundler(),
