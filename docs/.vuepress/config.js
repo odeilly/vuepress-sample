@@ -3,6 +3,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress";
 import { copyCodePlugin } from "@vuepress/plugin-copy-code";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   title: "VuePress サンプル",
@@ -47,7 +48,11 @@ export default defineUserConfig({
           copy: "copy",
         }
       }
-    })
+    }),
+
+    mdEnhancePlugin({
+      plantuml: true,
+    }),
   ],
 
   port: 9000,
