@@ -7,3 +7,7 @@ public class Sample {
     }
 }
 ```
+
+::: info
+これは Markdown Container
+:::
