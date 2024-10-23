@@ -7,7 +7,24 @@ export default defineUserConfig({
     lang: 'ja',
     base: '/vuepress-sample/',
     bundler: viteBundler(),
-    theme: defaultTheme(),
+    theme: defaultTheme({
+        navbar: [
+            {
+                text: "MySQL",
+                children: [
+                    {
+                        text: "MySQL",
+                        link: "/mysql.html"
+                    }
+                ],
+            },
+            {
+                text: "Home",
+                link: "/"
+            }
+        ],
+    }),
+
 
     port: 9000
 })
