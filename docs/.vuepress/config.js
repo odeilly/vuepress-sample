@@ -14,6 +14,15 @@ export default defineUserConfig({
   theme: defaultTheme({
     navbar: [
       {
+        text: "Sample",
+        children: [
+          {
+            text: "PlantUML",
+            link: "/plantuml.html",
+          }
+        ]
+      },
+      {
         text: "MySQL",
         children: [
           {
