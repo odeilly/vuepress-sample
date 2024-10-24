@@ -1,4 +1,4 @@
-# VuePress サンプル
+# Home
 
 ```java {2-4}
 public class Sample {
