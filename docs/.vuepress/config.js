@@ -12,6 +12,9 @@ export default defineUserConfig({
   base: "/vuepress-sample/",
   bundler: viteBundler(),
   theme: defaultTheme({
+
+    contributors: false,
+
     navbar: [
       {
         text: "Sample",
